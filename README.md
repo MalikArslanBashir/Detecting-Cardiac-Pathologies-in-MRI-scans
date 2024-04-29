@@ -1,2 +1,16 @@
 # Detecting-Cardiac-Pathologies-in-MRI-scans
 This project focuses on developing an automated system for detecting and characterizing cardiac pathologies from MRI scans. Leveraging advanced image processing techniques and machine learning algorithms, the system aims to accurately identify conditions such as myocardial infarction, cardiomyopathy, and myocarditis.
+# Problem Statement:
+The conventional methods for diagnosing cardiac pathologies often rely on manual interpretation of MRI images by trained experts, which can be time-consuming and prone to subjective errors. Moreover, subtle abnormalities may go unnoticed, leading to delayed diagnosis and treatment. The challenge lies in developing automated methods capable of accurately identifying various cardiac pathologies, including myocardial infarction, cardiomyopathy, and myocarditis, from MRI scans with high sensitivity and specificity.
+# Methodology:
+Data Collection: The project begins with the acquisition of a diverse dataset comprising MRI scans of patients with different cardiac conditions, along with corresponding clinical metadata. The dataset includes images obtained from multiple centers to ensure variability and generalizability.
+Preprocessing: Prior to analysis, the MRI images undergo preprocessing steps to enhance quality and standardize the data. This involves techniques such as noise reduction, motion correction, and normalization to ensure consistency across scans.
+Feature Extraction: Various features are extracted from the preprocessed MRI images to capture relevant information about cardiac morphology, tissue characteristics, and functional parameters. These features may include texture descriptors, shape-based features, and intensity histograms.
+Machine Learning Model Development: A machine learning pipeline is constructed to train and validate predictive models for cardiac pathology detection. Different algorithms such as convolutional neural networks (CNNs), support vector machines (SVMs), and random forests are explored to identify the most suitable approach.
+Model Evaluation: The performance of the developed models is assessed using metrics such as accuracy, sensitivity, specificity, and area under the receiver operating characteristic curve (AUC-ROC). Cross-validation techniques are employed to ensure robustness and prevent overfitting.
+Clinical Integration: The validated models are integrated into clinical workflows to assist radiologists and cardiologists in interpreting MRI scans more efficiently. User-friendly interfaces are developed to facilitate seamless interaction and decision support.
+# Challenges Faced:
+Data Heterogeneity: Obtaining a diverse and representative dataset with adequate annotations poses a challenge due to variations in imaging protocols, scanner types, and patient demographics.
+Interpretability vs. Performance: Balancing model interpretability with performance is crucial, especially in a clinical setting where transparency and trust are paramount.
+Limited Labeling Resources: Annotating MRI images for different cardiac pathologies requires expert knowledge and is labor-intensive, limiting the scalability of the project.
+Generalization: Ensuring the generalizability of the developed models across different populations and imaging conditions remains a challenge, necessitating robust validation strategies.
