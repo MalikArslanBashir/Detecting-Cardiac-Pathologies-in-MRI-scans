@@ -1,0 +1,40 @@
+###############################################################################
+[Dataprep]
+
+data_path                   = /media/ee/data/PhD-data/Research-Work/Cardiac/Algos/Datasets/Vendor_wise_Datasets/ACDCSiemens/
+processed_data_path         = /media/ee/data/PhD-data/Research-Work/Cardiac/Algos/Datasets/Vendor_wise_Datasets/Preprocessed_Data/Siemens/
+
+# Order: filtering, resampling, winsorizing, cropping, normalize, change_label
+preprocessing_to_do         = [resampling,cropping,change_label]
+
+filter_win_size             = 3
+target_resolution           = [1.25, 1.25]
+scaling_mod                 = symmetric
+
+######## Change label values
+# [LV, RV, Myocardium]
+
+# ACDC labels
+old_labels                  =[3,1,2]
+
+# MM labels
+new_labels                  =[1,3,2]
+
+######## Order of interpolation 
+#0 : Nearest 
+#1 : Bi-linear (default) 
+#2 : Bi-quadratic 
+#3 : Bi-cubic 
+#4 : Bi-quartic 
+#5 : Bi-quintic
+interpolate_image           = 1
+#########
+
+crop_factor                 = [352, 352]
+clip_low                    = 1
+clip_high                   = 99
+
+save_nii_flag               = True
+save_pkl_flag               = False
+save_mat_flag               = False
+###############################################################################
